@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FPInCSharp
+namespace Chapter03
 {
     class Program
     {
