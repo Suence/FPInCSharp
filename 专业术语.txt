@@ -1,0 +1,4 @@
+Option -> MayBe
+Some -> Just
+None -> Nothing
+贫血对象 -> 表示一个类型只有字段或属性

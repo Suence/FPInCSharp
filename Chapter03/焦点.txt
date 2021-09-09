@@ -1,2 +1,6 @@
-﻿隔离副作用(IO)
-使用 HOF 代替标头接口
+﻿使无效状态不可表示
+
+专业术语
+Option -> MayBe
+Some -> Just
+None -> Nothing

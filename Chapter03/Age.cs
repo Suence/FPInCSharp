@@ -19,5 +19,17 @@ namespace Chapter03
             => 0 <= age && age < 120;
 
         public int Value { get; }
+
+        public static bool operator <(Age l, Age r)
+            => l.Value < r.Value;
+
+        public static bool operator >(Age l, Age r)
+            => l.Value > r.Value;
+
+        public static bool operator <(Age l, int r)
+            => l < new Age(r);
+
+        public static bool operator >(Age l, int r)
+            => l > new Age(r);
     }
 }

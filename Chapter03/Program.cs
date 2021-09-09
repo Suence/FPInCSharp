@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using OptionT;
+using System;
 
 namespace Chapter03
 {
@@ -6,7 +8,10 @@ namespace Chapter03
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Option<string> name = "Lucy";
+            var json = JsonConvert.SerializeObject(name);
+            Option<string> nameD = JsonConvert.DeserializeObject<Option<string>>(json);
+
         }
     }
 }
